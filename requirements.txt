@@ -1,2 +1,2 @@
-deactivate  # If the virtual environment is active
-rm -rf venv
+python -m venv venv
+source venv/bin/activate 
