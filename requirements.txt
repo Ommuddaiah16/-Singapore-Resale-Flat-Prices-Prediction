@@ -1,7 +1,2 @@
-streamlit==1.36.0
-pandas==2.2.2
-numpy==1.20.3 
-scikit-learn==1.5.1
-joblib==1.4.2
-catboost==1.2.5
-plotly==5.22.0
+deactivate  # If the virtual environment is active
+rm -rf venv
