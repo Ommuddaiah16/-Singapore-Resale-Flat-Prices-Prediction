@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from joblib import load
+from catboost import CatBoostRegressor
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # Load pre-trained models and encoders
