@@ -5,13 +5,13 @@ from joblib import load
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # Load pre-trained models and encoders
-df_copy = load('D:/Vscode/real_estate/df.joblib')
-categorical_encoded = load('D:/Vscode/real_estate/categorical_encoded.joblib')
-numerical_scaled = load('D:/Vscode/real_estate/numerical_scaled.joblib')
-label_encoders = load('D:/Vscode/real_estate/label_encoders.joblib')
-scaler_features = load('D:/Vscode/real_estate/scaler_features.joblib')
-scaler_y = load('D:/Vscode/real_estate/scaler_target.joblib')
-cat_regressor = load('D:/Vscode/real_estate/cat_regressor_model.joblib')
+df_copy = pd.read_csv(r'ResaleFlatPricesBasedonRegistrationDateFromMar2012toDec2014.csv')
+categorical_encoded = load('categorical_encoded.joblib')
+numerical_scaled = load('numerical_scaled.joblib')
+label_encoders = load('label_encoders.joblib')
+scaler_features = load('scaler_features.joblib')
+scaler_y = load('scaler_target.joblib')
+cat_regressor = load('cat_regressor_model.joblib')
 
 # Streamlit app configuration
 st.set_page_config(page_title="Resale Flat Price Predictor", layout="wide")
